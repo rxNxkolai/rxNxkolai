@@ -1,21 +1,19 @@
 ### Hi, I'm Nikolai
 
-I build small, sharp, zero-dependency tools for the quality and trust layer of LLM applications. One coherent family, covering the whole lifecycle of an AI app: author it, harden it, test it, ship it, watch it.
+I build agent systems that do real work and can be held to account for it: what the agent
+did, whether it was allowed to, and what it cost.
 
-## The toolchain
+## Projects
 
-| Stage | Tool | What it does |
-| --- | --- | --- |
-| Author | [redline](https://github.com/rxNxkolai/redline) | Lint prompt and agent-instruction files |
-| Harden | [crucible](https://github.com/rxNxkolai/crucible) | Red-team a system prompt for security weaknesses |
-| Gate | [warden](https://github.com/rxNxkolai/warden) | Lint agent permissions and tool configs |
-| Render | [stencil](https://github.com/rxNxkolai/stencil) | Interpolate untrusted data into prompts safely |
-| Test | [litmus](https://github.com/rxNxkolai/litmus) | Unit tests for prompts |
-| Mock | [cassette](https://github.com/rxNxkolai/cassette) | Record and replay LLM calls for deterministic tests |
-| Measure | [tally](https://github.com/rxNxkolai/tally) | Token, cost, and context-budget analysis |
-| Repair | [rivet](https://github.com/rxNxkolai/rivet) | Validate and repair the JSON an LLM emits |
-| Redact | [veil](https://github.com/rxNxkolai/veil) | Strip PII and secrets before text leaves your app |
-| Verify | [veritas](https://github.com/rxNxkolai/veritas) | Check the claims and citations in an answer |
-| Supervise | [quorum](https://github.com/rxNxkolai/quorum) | A council of critic-judges watching an agent loop |
+| Project | What it is |
+| --- | --- |
+| [goon-agent](https://github.com/rxNxkolai/goon-agent) | A local-first desktop AI operator. Plans multi-step work, asks before anything touches the outside world, and writes a receipt for every action. Electron and React over a Python FastAPI agent runtime. Bring your own key, or run it free on local Ollama. |
+| [openv](https://github.com/rxNxkolai/openv) | Shopper-behavior intelligence on a store's existing security cameras. Detection, tracking, zone events, and reach detection feed an agent that diagnoses what is going wrong at the shelf. No face recognition, by design. |
+| [opentrail](https://github.com/rxNxkolai/opentrail) | A flight recorder for AI agents. Records what a session actually did and writes a readable, auditable receipt: tools called, files touched, tokens and cost spent. |
+| [opentaste](https://github.com/rxNxkolai/opentaste) | Design rules for web interfaces, each one carrying the A/B evidence that produced it. A record of which defaults stopped working and what replaced them. |
 
-Every tool: zero runtime dependencies, tested, CI-green on Node 18, 20, and 22, MIT licensed, with an interactive HTML report. Run any of them with `npx github:rxNxkolai/<tool>`.
+## How I work
+
+Claims get checked before they get made. Every project here states what is built and what is
+still scaffolding, because an agent that overstates what it did is worse than one that does
+less.
